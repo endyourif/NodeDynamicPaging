@@ -1,0 +1,16 @@
+!!! 5
+html(lang+"en")
+    head
+        title= pageTitle
+
+        block scripts
+            script
+                var maxPages= #{maxPages};
+            script(src='/js/jquery.min.js')
+            script(src='/js/paging.js')
+
+        style
+           #items { width: 300px; }
+    body
+        h1 Test
+        block content
